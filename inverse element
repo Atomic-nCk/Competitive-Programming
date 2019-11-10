@@ -28,7 +28,7 @@ for(ll i=1;i<=maxn;i++){
 }
 
 //逆元を求める
-rfac[maxn]=pow(fac[maxn],INF-2);
+rfac[maxn]=pow(fac[maxn],mod-2);
     
 for(ll i=maxn;i>=1;i--){
     rfac[i-1]=rfac[i]*i%mod;
