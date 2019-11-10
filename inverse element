@@ -1,5 +1,5 @@
-ll fac[2*maxn+1];
-ll rfac[2*maxn+1];
+ll fac[maxn+1];
+ll rfac[maxn+1];
 ll mod=INF;
 
 //最小二乗法
@@ -28,9 +28,9 @@ for(ll i=1;i<=maxn;i++){
 }
 
 //逆元を求める
-rfac[h+w]=pow(fac[h+w],INF-2);
+rfac[maxn]=pow(fac[maxn],INF-2);
     
-for(ll i=h+w;i>=1;i--){
+for(ll i=maxn;i>=1;i--){
     rfac[i-1]=rfac[i]*i%mod;
 }
 
