@@ -4,6 +4,7 @@ long gcd(long a,long b){
     else return gcd(b,a%b);
 }
 
+
 long lcm(long a,long b){
     ll M = gcd(a,b);
     return a*b/M;
