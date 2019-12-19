@@ -1,0 +1,18 @@
+long long binary_search(long long l,long long r){
+    l = l-1;r=r+1;      //l=lower limit - 1,r = upper limit + 1
+    bool key=false;
+    long long res;
+    while(l<r){
+        long long mid = (l+r)/2;
+        
+//        process
+
+//        if(key){
+//        res = mid;
+//            r = mid-1;
+//        }else{
+//            l = mid+1;
+//        }
+    }
+    return res;
+}
