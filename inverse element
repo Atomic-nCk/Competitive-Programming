@@ -2,7 +2,7 @@ ll fac[maxn+1];
 ll rfac[maxn+1];
 ll mod=INF;
 
-//最小二乗法
+//繰り返し二乗法
 ll pow(ll x,ll y){
     if(y==0){
         return 1;
