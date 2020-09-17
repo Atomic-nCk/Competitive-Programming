@@ -1,6 +1,5 @@
-ll fac[maxn+1];
-ll rfac[maxn+1];
-ll mod=INF;
+ll fac[maxnum+1];
+ll rfac[maxnum+1];
 
 ll pow(ll x,ll y){
     if(y==0){
@@ -16,20 +15,19 @@ ll pow(ll x,ll y){
     }
 }
 
-const int maxn;
 
 int main(){
 
 fac[0]=fac[1]=rfac[0]=rfac[1]=1;
 
-for(ll i=1;i<=maxn;i++){
+for(ll i=1;i<=maxnum;i++){
         fac[i]=fac[i-1]*i%mod;
 }
 
 //逆元を求める
-rfac[maxn]=pow(fac[maxn],mod-2);
+rfac[maxnum]=pow(fac[maxnum],mod-2);
     
-for(ll i=maxn;i>=1;i--){
+for(ll i=maxnum;i>=1;i--){
     rfac[i-1]=rfac[i]*i%mod;
 }
 
